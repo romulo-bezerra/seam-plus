@@ -1,0 +1,1 @@
+# Aplicativo para Gerenciamento de Ateliês de Costura de Pequeno Porte
