@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroAtelieActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/btnCadastrarAtelie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="43dp"
+        android:background="@color/colorButtonNext"
+        android:text="Cadastrar"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <LinearLayout
+        android:id="@+id/llTituloTelaCadastro"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iconBusiness"
+            android:layout_width="35dp"
+            android:layout_height="33dp"
+            app:srcCompat="@drawable/ic_business_black_24dp"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="122dp"
+            tools:srcCompat="@drawable/ic_business_black_24dp" />
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:text=" Cadastro de Ateliê"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="134dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="236dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrarAtelie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llTituloTelaCadastro">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="326dp"
+            android:layout_height="21dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="88dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="21dp"
+                android:layout_height="18dp"
+                app:srcCompat="@drawable/ic_text_fields_black_24dp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+            <TextView
+                android:id="@+id/tvCampoAtelie"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:text="Nome Fantasia"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etNomeFantasia"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Digite o nome do seu ateliê"
+            android:inputType="textPersonName"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="109dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

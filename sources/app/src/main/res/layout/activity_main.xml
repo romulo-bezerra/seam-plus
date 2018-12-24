@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="21dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnEntrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogin">
+
+        <LinearLayout
+            android:id="@+id/llCampos"
+            android:layout_width="326dp"
+            android:layout_height="21dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="88dp">
+
+            <ImageView
+                android:id="@+id/iconEmail"
+                android:layout_width="21dp"
+                android:layout_height="18dp"
+                app:srcCompat="@drawable/ic_mail_outline_black_24dp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+            <TextView
+                android:id="@+id/tvCampoEmail"
+                android:layout_width="47dp"
+                android:layout_height="18dp"
+                android:text="Email"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="308dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Digite seu email"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="109dp" />
+
+        <LinearLayout
+            android:id="@+id/llCampoSenha"
+            android:layout_width="326dp"
+            android:layout_height="21dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="88dp">
+
+            <ImageView
+                android:id="@+id/iconPassword"
+                android:layout_width="21dp"
+                android:layout_height="18dp"
+                app:srcCompat="@drawable/ic_lock_outline_black_24dp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+            <TextView
+                android:id="@+id/tvCampoSenha"
+                android:layout_width="47dp"
+                android:layout_height="18dp"
+                android:text="Senha"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etSenha"
+            android:layout_width="308dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Digite sua senha"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="109dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="17dp"
+        android:background="@color/colorButtonNext"
+        android:text="Entrar"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/llFooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="19dp"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llLogo" />
+
+    <LinearLayout
+        android:id="@+id/llFooter"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrar">
+
+        <TextView
+            android:id="@+id/tvLabelStatic01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ainda não possui cadastro?"
+            android:textColor="@android:color/black"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="423dp" />
+
+        <Button
+            android:id="@+id/btnTelaCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+
+            android:background="@android:color/transparent"
+            android:text="Clique aqui e Cadastre-se!"
+            android:textAllCaps="false"
+            android:textColor="@color/colorLink"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="460dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/llLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iconInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_info_outline_blue_24dp"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="56dp" />
+
+        <Button
+            android:id="@+id/btnSobre"
+            android:layout_width="121dp"
+            android:layout_height="24dp"
+
+            android:background="@android:color/transparent"
+            android:text="Sobre o Aplicativo"
+            android:textAllCaps="false"
+            android:textColor="@color/colorLink"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tvLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="138dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/logo"
+            tools:layout_editor_absoluteX="123dp"
+            tools:layout_editor_absoluteY="42dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

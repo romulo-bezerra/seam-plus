@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- XML customizado !-->
+    <color name="colorButtonNext">#008000</color>
+    <color name="colorLink">#4169e1</color>
+    <color name="colorTitlePages">#57dfdbdb</color>
+
+</resources>

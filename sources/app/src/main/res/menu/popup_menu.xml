@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="temp.ifpb.edu.br.seamplus.MainActivity">
+
+    <item
+        android:id="@+id/item1"
+        android:orderInCategory="100"
+        android:title="Item 1"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item2"
+        android:orderInCategory="100"
+        android:title="Item 2"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item3"
+        android:orderInCategory="100"
+        android:title="Item 3"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item4"
+        android:orderInCategory="100"
+        android:title="Item 4"
+        app:showAsAction="never" />
+
+</menu>
