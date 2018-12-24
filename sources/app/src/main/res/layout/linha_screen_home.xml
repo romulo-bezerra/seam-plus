@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llPrincipalLine"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPedido"
+                android:layout_width="10dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Nome Pedido"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnCliente"
+                android:layout_width="121dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="Nome Cliente"
+                android:textColor="@android:color/background_dark" />
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnVisualizar"
+                    android:layout_width="104dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/colorLink"
+                    android:gravity="center"
+                    android:text="Visualizar"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btnFinalizar"
+                    android:layout_width="104dp"
+                    android:layout_height="25dp"
+                    android:background="@color/colorButtonNext"
+                    android:text="Finalizar"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvPrioridade"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Pioridade"
+                android:textAlignment="textStart"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

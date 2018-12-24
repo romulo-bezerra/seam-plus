@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientesActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="330dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/lvClientes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <TextView
+            android:id="@+id/tvCabecalhoPedido"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorTitlePages"
+            android:text="| Cliente"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCabecalhoCliente"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorTitlePages"
+            android:text="| Dívida"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCabecalhoAcao"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorTitlePages"
+            android:text="| Ação"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvClientes"
+        android:layout_width="330dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="330dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llBusca">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clientes"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvFiltro"
+            android:layout_width="119dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:text="Ordenar"
+            android:textAlignment="textEnd" />
+
+        <ImageButton
+            android:id="@+id/btnFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            android:paddingRight="10dp"
+            app:srcCompat="@drawable/ic_reorder_black_24dp"
+            tools:layout_editor_absoluteX="343dp"
+            tools:layout_editor_absoluteY="118dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBusca"
+        android:layout_width="330dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llPagTitle">
+
+        <ImageView
+            android:id="@+id/iconSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_search_black_24dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+        <EditText
+            android:id="@+id/etCampoBuscaPedidosClientes"
+            android:layout_width="212dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint="Busque um pedido ou cliente"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+        <Button
+            android:id="@+id/btnBuscarPedido"
+            android:layout_width="76dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorButtonNext"
+            android:text="Buscar"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="228dp"
+            tools:layout_editor_absoluteY="173dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPagTitle"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="11dp"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/llBusca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside">
+
+        <ImageView
+            android:id="@+id/iconBusiness"
+            android:layout_width="41dp"
+            android:layout_height="33dp"
+            app:srcCompat="@drawable/ic_folder_open_black_24dp"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="122dp"
+            tools:srcCompat="@drawable/ic_folder_open_black_24dp" />
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clientes"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="134dp" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorButtonNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lvClientes"
+        app:layout_constraintTop_toBottomOf="@+id/lvClientes"
+        app:srcCompat="@drawable/ic_add_white_24dp" />
+
+
+
+</android.support.constraint.ConstraintLayout>

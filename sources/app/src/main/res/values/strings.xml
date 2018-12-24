@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Seam Plus</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string-array name="sexo_array">
+        <item>Selecione o sexo</item>
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Outro</item>
+    </string-array>
+
+</resources>
