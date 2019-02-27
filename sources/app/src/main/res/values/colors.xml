@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimaryDark">#00574b</color>
     <color name="colorAccent">#D81B60</color>
 
     <!-- XML customizado !-->
+    <color name="colorButtonNextPressed">#32CD32</color>
     <color name="colorButtonNext">#008000</color>
-    <color name="colorLink">#4169e1</color>
+
+    <color name="colorLink">#0000ff</color>
+    <color name="colorLinkPressed">#1e90ff</color>
+
+    <color name="colorButtonDelete">#FF0000</color>
+    <color name="colorButtonDeletePressed">#FF6347</color>
+
     <color name="colorTitlePages">#57dfdbdb</color>
 
 </resources>

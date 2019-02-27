@@ -4,350 +4,317 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadastroUsuarioActivity"
+    tools:context=".activities.CadastroUsuarioActivity"
     tools:layout_editor_absoluteY="81dp">
 
     <LinearLayout
-        android:id="@+id/llFooter"
+        android:id="@+id/linearLayout11"
         android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="16dp"
-        android:gravity="left|center"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCadastrarAtelie6">
-
-        <TextView
-            android:id="@+id/tvLabelStatic01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Já possui conta?"
-            android:textColor="@android:color/black"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="423dp" />
-
-        <Button
-            android:id="@+id/btnTelaCadastro"
-            android:layout_width="wrap_content"
-            android:layout_height="21dp"
-
-            android:background="@android:color/transparent"
-            android:text="Clique aqui para fazer login!"
-            android:textAllCaps="false"
-            android:textColor="@color/colorLink"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="460dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="0dp"
-        android:layout_height="336dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginEnd="29dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/btnCadastrarAtelie6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/llTituloTelaCadastro">
-
-        <LinearLayout
-            android:id="@+id/llCabecalhoNome"
-            android:layout_width="326dp"
-            android:layout_height="21dp"
-            android:orientation="horizontal"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="88dp">
-
-            <ImageView
-                android:id="@+id/iconNome"
-                android:layout_width="21dp"
-                android:layout_height="18dp"
-                app:srcCompat="@drawable/ic_text_fields_black_24dp"
-                tools:layout_editor_absoluteX="29dp"
-                tools:layout_editor_absoluteY="115dp" />
-
-            <TextView
-                android:id="@+id/tvNome"
-                android:layout_width="118dp"
-                android:layout_height="18dp"
-                android:paddingLeft="5dp"
-                android:text="Nome Completo"
-                android:textAlignment="viewStart"
-                android:textColor="@android:color/background_dark"
-                tools:layout_editor_absoluteX="65dp"
-                tools:layout_editor_absoluteY="115dp" />
-
-
-        </LinearLayout>
-
-        <EditText
-            android:id="@+id/etNome"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:ems="10"
-            android:hint="Digite seu nome completo"
-            android:inputType="textPersonName"
-            android:textSize="14sp"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="109dp" />
-
-        <LinearLayout
-            android:id="@+id/llCabecalhoApelido"
-            android:layout_width="326dp"
-            android:layout_height="21dp"
-            android:orientation="horizontal"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="88dp">
-
-            <ImageView
-                android:id="@+id/iconApelido"
-                android:layout_width="21dp"
-                android:layout_height="18dp"
-                app:srcCompat="@drawable/ic_date_range_black_24dp"
-                tools:layout_editor_absoluteX="29dp"
-                tools:layout_editor_absoluteY="115dp" />
-
-            <TextView
-                android:id="@+id/tvApelido"
-                android:layout_width="105dp"
-                android:layout_height="18dp"
-                android:paddingLeft="5dp"
-                android:text="Nascimento"
-                android:textAlignment="viewStart"
-                android:textColor="@android:color/background_dark"
-                tools:layout_editor_absoluteX="65dp"
-                tools:layout_editor_absoluteY="115dp" />
-
-        </LinearLayout>
-
-        <EditText
-            android:id="@+id/etNascimento"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:ems="10"
-            android:hint="Digite sua data de nascimento"
-            android:inputType="date"
-            android:textSize="14sp"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="109dp" />
-
-        <LinearLayout
-            android:id="@+id/llCabecalhoSexo"
-            android:layout_width="326dp"
-            android:layout_height="21dp"
-            android:orientation="horizontal"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="88dp">
-
-            <ImageView
-                android:id="@+id/iconSexo"
-                android:layout_width="21dp"
-                android:layout_height="18dp"
-                app:srcCompat="@drawable/ic_wc_black_24dp"
-                tools:layout_editor_absoluteX="29dp"
-                tools:layout_editor_absoluteY="115dp" />
-
-            <TextView
-                android:id="@+id/tvSexo"
-                android:layout_width="105dp"
-                android:layout_height="18dp"
-                android:paddingLeft="5dp"
-                android:text="Sexo"
-                android:textAlignment="viewStart"
-                android:textColor="@android:color/background_dark"
-                tools:layout_editor_absoluteX="65dp"
-                tools:layout_editor_absoluteY="115dp" />
-
-
-        </LinearLayout>
-
-        <Spinner
-            android:id="@+id/spinnerSexo"
-            android:layout_width="match_parent"
-            android:layout_height="35dp" />
-
-        <LinearLayout
-            android:id="@+id/llCabecalhoEmail"
-            android:layout_width="326dp"
-            android:layout_height="21dp"
-            android:orientation="horizontal"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="88dp">
-
-            <ImageView
-                android:id="@+id/iconEmail"
-                android:layout_width="21dp"
-                android:layout_height="18dp"
-                app:srcCompat="@drawable/ic_mail_outline_black_24dp"
-                tools:layout_editor_absoluteX="29dp"
-                tools:layout_editor_absoluteY="115dp" />
-
-            <TextView
-                android:id="@+id/tvEmail"
-                android:layout_width="105dp"
-                android:layout_height="18dp"
-                android:paddingLeft="5dp"
-                android:text="Email"
-                android:textAlignment="viewStart"
-                android:textColor="@android:color/background_dark"
-                tools:layout_editor_absoluteX="65dp"
-                tools:layout_editor_absoluteY="115dp" />
-
-        </LinearLayout>
-
-        <EditText
-            android:id="@+id/etEmail"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:ems="10"
-            android:hint="Digite seu email"
-            android:inputType="textEmailAddress"
-            android:textSize="14sp"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="109dp" />
-
-        <LinearLayout
-            android:id="@+id/llCabecalhoSenha"
-            android:layout_width="326dp"
-            android:layout_height="21dp"
-            android:orientation="horizontal"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="88dp">
-
-            <ImageView
-                android:id="@+id/iconSenha"
-                android:layout_width="21dp"
-                android:layout_height="18dp"
-                app:srcCompat="@drawable/ic_password_black_24dp"
-                tools:layout_editor_absoluteX="29dp"
-                tools:layout_editor_absoluteY="115dp" />
-
-            <TextView
-                android:id="@+id/tvSenha"
-                android:layout_width="105dp"
-                android:layout_height="18dp"
-                android:paddingLeft="5dp"
-                android:text="Senha"
-                android:textAlignment="viewStart"
-                android:textColor="@android:color/background_dark"
-                tools:layout_editor_absoluteX="65dp"
-                tools:layout_editor_absoluteY="115dp" />
-
-        </LinearLayout>
-
-        <EditText
-            android:id="@+id/etSenha"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:ems="10"
-            android:hint="Digite sua senha"
-            android:inputType="textPassword"
-            android:textSize="14sp"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="109dp" />
-
-        <LinearLayout
-            android:id="@+id/llCabecalhoRepeteSenha"
-            android:layout_width="326dp"
-            android:layout_height="21dp"
-            android:orientation="horizontal"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="88dp">
-
-            <ImageView
-                android:id="@+id/iconRepeteSenha"
-                android:layout_width="21dp"
-                android:layout_height="18dp"
-                app:srcCompat="@drawable/ic_password_black_24dp"
-                tools:layout_editor_absoluteX="29dp"
-                tools:layout_editor_absoluteY="115dp" />
-
-            <TextView
-                android:id="@+id/tvRepeteSenha"
-                android:layout_width="105dp"
-                android:layout_height="18dp"
-                android:paddingLeft="5dp"
-                android:text="Repita Senha"
-                android:textAlignment="viewStart"
-                android:textColor="@android:color/background_dark"
-                tools:layout_editor_absoluteX="65dp"
-                tools:layout_editor_absoluteY="115dp" />
-
-        </LinearLayout>
-
-        <EditText
-            android:id="@+id/etRepeteSenha"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:ems="10"
-            android:hint="Repita sua senha"
-            android:inputType="textPassword"
-            android:textSize="14sp"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="109dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/llTituloTelaCadastro"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="7dp"
-        android:gravity="left|center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/iconBusiness"
-            android:layout_width="35dp"
-            android:layout_height="33dp"
-            app:srcCompat="@drawable/ic_person_add_black_24dp"
-            tools:layout_editor_absoluteX="31dp"
-            tools:layout_editor_absoluteY="122dp" />
+        <LinearLayout
+            android:id="@+id/llTituloTelaCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/tvTitulo"
-            android:layout_width="wrap_content"
-            android:layout_height="33dp"
-            android:gravity="center"
-            android:text=" Cadastro de Usuario"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:gravity="center"
+                android:text=" Cadastro de Usuario"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="98dp"
+                tools:layout_editor_absoluteY="134dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llTituloTelaCadastro">
+
+            <LinearLayout
+                android:id="@+id/llCabecalhoNome"
+                android:layout_width="326dp"
+                android:layout_height="21dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="88dp">
+
+                <TextView
+                    android:id="@+id/tvNomeUsuario"
+                    android:layout_width="118dp"
+                    android:layout_height="18dp"
+                    android:paddingLeft="5dp"
+                    android:text="Nome Completo"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etNomeUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nome completo"
+                android:inputType="textPersonName"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="109dp" />
+
+            <LinearLayout
+                android:id="@+id/llCabecalhoApelido"
+                android:layout_width="326dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="88dp">
+
+                <ImageView
+                    android:id="@+id/iconApelido"
+                    android:layout_width="21dp"
+                    android:layout_height="18dp"
+                    app:srcCompat="@drawable/ic_date_range_black_24dp"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+                <TextView
+                    android:id="@+id/tvNascimentoUsuario"
+                    android:layout_width="105dp"
+                    android:layout_height="18dp"
+                    android:paddingLeft="5dp"
+                    android:text="Nascimento"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etNascimentoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="dd/mm/aaaa"
+                android:inputType="date"
+                android:maxLength="10"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="109dp" />
+
+            <LinearLayout
+                android:id="@+id/llCabecalhoSexo"
+                android:layout_width="326dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="88dp">
+
+                <ImageView
+                    android:id="@+id/iconSexo"
+                    android:layout_width="21dp"
+                    android:layout_height="18dp"
+                    app:srcCompat="@drawable/ic_wc_black_24dp"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+                <TextView
+                    android:id="@+id/tvSexoUsuario"
+                    android:layout_width="105dp"
+                    android:layout_height="18dp"
+                    android:paddingLeft="5dp"
+                    android:text="Sexo"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinnerSexo"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <LinearLayout
+                android:id="@+id/llCabecalhoEmail"
+                android:layout_width="326dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="88dp">
+
+                <ImageView
+                    android:id="@+id/iconEmail"
+                    android:layout_width="21dp"
+                    android:layout_height="18dp"
+                    app:srcCompat="@drawable/ic_mail_outline_black_24dp"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+                <TextView
+                    android:id="@+id/tvEmailUsuario"
+                    android:layout_width="105dp"
+                    android:layout_height="18dp"
+                    android:paddingLeft="5dp"
+                    android:text="Email"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etEmailUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Digite seu email"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="109dp" />
+
+            <LinearLayout
+                android:id="@+id/llCabecalhoSenha"
+                android:layout_width="326dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="88dp">
+
+                <ImageView
+                    android:id="@+id/iconSenha"
+                    android:layout_width="21dp"
+                    android:layout_height="18dp"
+                    app:srcCompat="@drawable/ic_password_black_24dp"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+                <TextView
+                    android:id="@+id/tvSenhaUsuario"
+                    android:layout_width="105dp"
+                    android:layout_height="18dp"
+                    android:paddingLeft="5dp"
+                    android:text="Senha"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etSenhaUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Digite sua senha"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="109dp" />
+
+            <LinearLayout
+                android:id="@+id/llCabecalhoRepeteSenha"
+                android:layout_width="326dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="88dp">
+
+                <ImageView
+                    android:id="@+id/iconRepeteSenha"
+                    android:layout_width="21dp"
+                    android:layout_height="18dp"
+                    app:srcCompat="@drawable/ic_password_black_24dp"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+                <TextView
+                    android:id="@+id/tvRepeteSenhaUsuario"
+                    android:layout_width="105dp"
+                    android:layout_height="18dp"
+                    android:paddingLeft="5dp"
+                    android:text="Repita Senha"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etRepeteSenhaUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Repita sua senha"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="109dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCadastroUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/selector_buttons_green"
+            android:onClick="onClickButtonCadastroUsuario"
+            android:text="Cadastrar"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="98dp"
-            tools:layout_editor_absoluteY="134dp" />
+            app:layout_constraintBottom_toTopOf="@+id/llFooter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/btnCadastrarAtelie6"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="6dp"
-        android:background="@color/colorButtonNext"
-        android:text="Cadastrar"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/llFooter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
 </android.support.constraint.ConstraintLayout>

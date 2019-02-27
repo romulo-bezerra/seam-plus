@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CadastroPedidoActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="507dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTituloPagina"
+                android:layout_width="434dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="fill_vertical"
+                android:text="Cadastro de Pedidos"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvDescricao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Descrição"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_dark"
+                        tools:layout_editor_absoluteX="65dp"
+                        tools:layout_editor_absoluteY="115dp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etDescricaoCadastroPedido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:ems="10"
+                    android:hint="Digite a descricao do pedido"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="109dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvDataRealizacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Data Realização"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_dark"
+                        tools:layout_editor_absoluteX="65dp"
+                        tools:layout_editor_absoluteY="115dp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etDataRealizacaoCadastroPedido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:ems="10"
+                    android:hint="dd/mm/aaaa"
+                    android:inputType="date"
+                    android:textSize="14sp"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="109dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvValor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Valor"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_dark"
+                        tools:layout_editor_absoluteX="65dp"
+                        tools:layout_editor_absoluteY="115dp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etValorCadastroPedido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:ems="10"
+                    android:hint="Digite o valor"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="14sp"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="109dp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Marque quando o pedido estiver finalizado"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cbPedidoFinalizado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Pedido Finalizado"
+                        android:theme="@style/CheckBoxTheme"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Selecione a prioridade do pedido"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbUrgente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Urgente"
+                        android:textColor="@android:color/black"
+                        android:theme="@style/CheckBoxTheme" />
+
+                    <RadioButton
+                        android:id="@+id/rbNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="60dp"
+                        android:layout_weight="1"
+                        android:text="Normal"
+                        android:theme="@style/CheckBoxTheme"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Marque se o pedido foi quitado"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cbPedidoQuitado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Pedido Quitado"
+                        android:theme="@style/CheckBoxTheme" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnCadastrarPedido"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:onClick="onClickButtonCadastrarPedido"
+                    android:background="@color/colorButtonNext"
+                    android:text="Cadastrar Pedido"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

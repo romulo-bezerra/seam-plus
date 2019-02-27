@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -12,53 +13,63 @@
         <LinearLayout
             android:id="@+id/llPrincipalLine"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="70dp"
             android:gravity="center"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/tvPedido"
+                android:id="@+id/tvPedidoHome"
                 android:layout_width="10dp"
-                android:layout_height="72dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:paddingLeft="5dp"
                 android:text="Nome Pedido"
-                android:textAlignment="center" />
+                android:textAlignment="textStart"
+                android:textColor="@android:color/background_dark" />
 
             <Button
-                android:id="@+id/btnCliente"
-                android:layout_width="121dp"
+                android:id="@+id/btnClienteHome"
+                android:layout_width="120dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
                 android:gravity="center"
+                android:paddingLeft="10dp"
                 android:text="Nome Cliente"
-                android:textColor="@android:color/background_dark" />
+                android:textAlignment="textStart"
+                android:textColor="@color/colorLink" />
 
             <LinearLayout
                 android:layout_width="5dp"
-                android:layout_height="55dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/btnVisualizar"
+                    android:id="@+id/btnVisualizarPedidoHome"
                     android:layout_width="104dp"
                     android:layout_height="25dp"
-                    android:layout_marginBottom="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
                     android:background="@color/colorLink"
                     android:gravity="center"
                     android:text="Visualizar"
                     android:textAlignment="center"
+                    android:textAllCaps="false"
                     android:textColor="@android:color/white" />
 
                 <Button
-                    android:id="@+id/btnFinalizar"
+                    android:id="@+id/btnFinalizarPedido"
                     android:layout_width="104dp"
                     android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
                     android:background="@color/colorButtonNext"
                     android:text="Finalizar"
                     android:textAlignment="center"
+                    android:textAllCaps="false"
                     android:textColor="@android:color/white" />
             </LinearLayout>
 
@@ -73,13 +84,14 @@
 
             <TextView
                 android:id="@+id/tvPrioridade"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:paddingLeft="5dp"
                 android:text="Pioridade"
-                android:textAlignment="textStart"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/holo_red_dark"
                 android:textStyle="bold" />
         </LinearLayout>
 

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCampoAtelie"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Nome Fantasia"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/etAtelieDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="sans-serif"
+            android:hint="Nome atelie"
+            android:inputType="text"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnEditAtelieDialog"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_buttons_blue"
+            android:text="Editar"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

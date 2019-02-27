@@ -6,25 +6,25 @@
     <item
         android:id="@+id/item1"
         android:orderInCategory="100"
-        android:title="Item 1"
-        app:showAsAction="never" />
+        android:title="Home"
+        app:showAsAction="never"/>
 
     <item
         android:id="@+id/item2"
         android:orderInCategory="100"
-        android:title="Item 2"
+        android:title="Clientes"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/item3"
         android:orderInCategory="100"
-        android:title="Item 3"
+        android:title="Pedidos"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/item4"
         android:orderInCategory="100"
-        android:title="Item 4"
+        android:title="Editar meu Cadastro"
         app:showAsAction="never" />
 
 </menu>

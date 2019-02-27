@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EdicaoUsuarioActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llTituloTelaCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="129dp"
+                android:layout_height="33dp"
+                android:gravity="center"
+                android:text="Editar Usuário"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="98dp"
+                tools:layout_editor_absoluteY="134dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llTituloTelaCadastro">
+
+            <LinearLayout
+                android:id="@+id/llCabecalhoNome"
+                android:layout_width="326dp"
+                android:layout_height="21dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="88dp">
+
+                <ImageView
+                    android:id="@+id/iconNome"
+                    android:layout_width="21dp"
+                    android:layout_height="18dp"
+                    app:srcCompat="@drawable/ic_text_fields_black_24dp"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+                <TextView
+                    android:id="@+id/tvNome"
+                    android:layout_width="118dp"
+                    android:layout_height="18dp"
+                    android:paddingLeft="5dp"
+                    android:text="Nome Completo"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Digite seu nome completo"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="109dp" />
+
+            <LinearLayout
+                android:id="@+id/llCabecalhoApelido"
+                android:layout_width="326dp"
+                android:layout_height="21dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="88dp">
+
+                <ImageView
+                    android:id="@+id/iconApelido"
+                    android:layout_width="21dp"
+                    android:layout_height="18dp"
+                    app:srcCompat="@drawable/ic_date_range_black_24dp"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+                <TextView
+                    android:id="@+id/tvApelido"
+                    android:layout_width="105dp"
+                    android:layout_height="18dp"
+                    android:paddingLeft="5dp"
+                    android:text="Nascimento"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etNascimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:ems="10"
+                android:hint="Digite sua data de nascimento"
+                android:inputType="date"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="109dp" />
+
+            <LinearLayout
+                android:id="@+id/llCabecalhoSexo"
+                android:layout_width="326dp"
+                android:layout_height="21dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="88dp">
+
+                <ImageView
+                    android:id="@+id/iconSexo"
+                    android:layout_width="21dp"
+                    android:layout_height="18dp"
+                    app:srcCompat="@drawable/ic_wc_black_24dp"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+                <TextView
+                    android:id="@+id/tvSexo"
+                    android:layout_width="105dp"
+                    android:layout_height="18dp"
+                    android:paddingLeft="5dp"
+                    android:text="Sexo"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinnerSexo"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <LinearLayout
+                android:id="@+id/llCabecalhoEmail"
+                android:layout_width="326dp"
+                android:layout_height="21dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="88dp">
+
+                <ImageView
+                    android:id="@+id/iconEmail"
+                    android:layout_width="21dp"
+                    android:layout_height="18dp"
+                    app:srcCompat="@drawable/ic_mail_outline_black_24dp"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="105dp"
+                    android:layout_height="18dp"
+                    android:paddingLeft="5dp"
+                    android:text="Email"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:ems="10"
+                android:hint="Digite seu email"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="109dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="175dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/selector_buttons_red"
+                android:text="Deletar"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+            <Button
+                android:id="@+id/btnConcluido"
+                android:layout_width="175dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="150dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_buttons_green"
+                android:text="Concluido"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

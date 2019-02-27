@@ -9,19 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CadastroAtelieActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".CadastroClienteActivity" />
-        <activity android:name=".CadastroUsuarioActivity" />
-        <activity android:name=".PedidosActivity" />
-        <activity android:name=".ClientesActivity"></activity>
+        <activity android:name=".activities.CadastroAtelieActivity" />
+        <activity android:name=".activities.HomeActivity" />
+        <activity android:name=".activities.CadastroClienteActivity" />
+        <activity android:name=".activities.CadastroUsuarioActivity" />
+        <activity android:name=".activities.PedidosActivity" />
+        <activity android:name=".activities.ClientesActivity" />
+        <activity android:name=".activities.CadastroPedidoActivity" />
+        <activity android:name=".activities.EdicaoClienteActivity" />
+        <activity android:name=".activities.EdicaoPedidoActivity" />
+        <activity android:name=".activities.EdicaoUsuarioActivity" />
+        <activity android:name=".activities.DividaActivity"></activity>
+
+
+        <service android:name=".services.DescontoPagamentoService" />
+
     </application>
 
 </manifest>
