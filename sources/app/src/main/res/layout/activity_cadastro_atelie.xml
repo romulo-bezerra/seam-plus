@@ -4,114 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadastroAtelieActivity"
+    tools:context=".activities.CadastroAtelieActivity"
     tools:layout_editor_absoluteY="81dp">
 
-    <Button
-        android:id="@+id/btnCadastrarAtelie"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="43dp"
-        android:background="@color/colorButtonNext"
-        android:text="Cadastrar"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
-
     <LinearLayout
-        android:id="@+id/llTituloTelaCadastro"
+        android:id="@+id/linearLayout9"
         android:layout_width="0dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="20dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/iconBusiness"
-            android:layout_width="35dp"
-            android:layout_height="33dp"
-            app:srcCompat="@drawable/ic_business_black_24dp"
-            tools:layout_editor_absoluteX="31dp"
-            tools:layout_editor_absoluteY="122dp"
-            tools:srcCompat="@drawable/ic_business_black_24dp" />
-
-        <TextView
-            android:id="@+id/tvTitulo"
-            android:layout_width="wrap_content"
-            android:layout_height="33dp"
-            android:text=" Cadastro de Ateliê"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="98dp"
-            tools:layout_editor_absoluteY="134dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="0dp"
-        android:layout_height="123dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="236dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/btnCadastrarAtelie"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/llTituloTelaCadastro">
-
         <LinearLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="326dp"
-            android:layout_height="21dp"
+            android:id="@+id/llTituloTelaCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:orientation="horizontal"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="88dp">
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="21dp"
-                android:layout_height="18dp"
-                app:srcCompat="@drawable/ic_text_fields_black_24dp"
-                tools:layout_editor_absoluteX="29dp"
-                tools:layout_editor_absoluteY="115dp" />
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/tvCampoAtelie"
-                android:layout_width="105dp"
-                android:layout_height="wrap_content"
-                android:text="Nome Fantasia"
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:text=" Cadastro de Ateliê"
                 android:textAlignment="center"
-                android:textColor="@android:color/background_dark"
-                tools:layout_editor_absoluteX="65dp"
-                tools:layout_editor_absoluteY="115dp" />
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="98dp"
+                tools:layout_editor_absoluteY="134dp" />
 
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/etNomeFantasia"
+        <LinearLayout
+            android:id="@+id/linearLayout4"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:hint="Digite o nome do seu ateliê"
-            android:inputType="textPersonName"
-            android:textSize="18sp"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="109dp" />
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/btnCadastrarAtelie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llTituloTelaCadastro">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="326dp"
+                android:layout_height="21dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="88dp">
+
+                <TextView
+                    android:id="@+id/tvCampoAtelie"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nome Fantasia"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etNomeAtelie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nome do seu ateliê"
+                android:inputType="text"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="109dp" />
+
+            <Button
+                android:id="@+id/btnCadastrarAtelie"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="335dp"
+                android:background="@drawable/selector_buttons_green"
+                android:onClick="onClickButtonCadastrarAtelie"
+                android:text="Cadastrar"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="139dp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
