@@ -3,7 +3,7 @@ package br.edu.ifpb.seamplus.model.enums;
 public enum SituacaoPedido {
 
     QUITADO("Quitado"),
-    NAO_QUITADO("Não quitado");
+    NAO_QUITADO("Nao_Quitado");
 
     private final String label;
 

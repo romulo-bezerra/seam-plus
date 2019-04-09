@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.CadastroPedidoActivity"
+    tools:context=".activity.CadastroPedidoActivity"
     tools:layout_editor_absoluteY="81dp">
 
     <LinearLayout
@@ -29,7 +29,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/tvTituloPagina"
+                android:id="@+id/tvTituloPaginaEdicaoPedido"
                 android:layout_width="434dp"
                 android:layout_height="37dp"
                 android:layout_marginTop="5dp"
@@ -44,8 +44,33 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDescricao2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Selecione o cliente"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/background_dark"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+            <Spinner
+                android:id="@+id/spinnerClientesEdicaoPedido"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="395dp"
+            android:layout_marginTop="5dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -74,14 +99,14 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/etDescricao"
+                    android:id="@+id/etDescricaoEdicaoPedido"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="-5dp"
                     android:ems="10"
                     android:hint="Digite a descricao do pedido"
                     android:inputType="textPersonName"
-                    android:textSize="18sp"
+                    android:textSize="14sp"
                     tools:layout_editor_absoluteX="29dp"
                     tools:layout_editor_absoluteY="109dp" />
 
@@ -105,14 +130,14 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/etDataRealizacao"
+                    android:id="@+id/etDataRealizacaoEdicaoPedido"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="-5dp"
                     android:ems="10"
-                    android:hint="Digite a data de realização"
+                    android:hint="dd/mm/aaaa"
                     android:inputType="date"
-                    android:textSize="18sp"
+                    android:textSize="14sp"
                     tools:layout_editor_absoluteX="29dp"
                     tools:layout_editor_absoluteY="109dp" />
 
@@ -136,14 +161,14 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/etValor"
+                    android:id="@+id/etValorEdicaoPedido"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="-5dp"
                     android:ems="10"
                     android:hint="Digite o valor"
                     android:inputType="number|numberDecimal"
-                    android:textSize="18sp"
+                    android:textSize="14sp"
                     tools:layout_editor_absoluteX="29dp"
                     tools:layout_editor_absoluteY="109dp" />
 
@@ -151,7 +176,7 @@
                     android:id="@+id/textView5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:text="Marque quando o pedido estiver finalizado"
                     android:textSize="12sp" />
 
@@ -161,7 +186,7 @@
                     android:orientation="horizontal">
 
                     <CheckBox
-                        android:id="@+id/cbPedidoFinalizado"
+                        android:id="@+id/cbPedidoFinalizadoEdicaoPedido"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -175,17 +200,28 @@
                     android:id="@+id/textView8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:text="Selecione a prioridade do pedido"
                     android:textSize="12sp" />
 
-                <LinearLayout
+
+                <RadioGroup
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
+
                     <RadioButton
-                        android:id="@+id/rbUrgente"
+                        android:id="@+id/rbNormalEdicaoPedido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Normal"
+                        android:theme="@style/CheckBoxTheme" />
+
+                    <RadioButton
+                        android:id="@+id/rbUrgenteEdicaoPedido"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -193,85 +229,55 @@
                         android:textColor="@android:color/black"
                         android:theme="@style/CheckBoxTheme" />
 
-                    <RadioButton
-                        android:id="@+id/rbNormal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="60dp"
-                        android:layout_weight="1"
-                        android:text="Normal"
-                        android:theme="@style/CheckBoxTheme" />
+                </RadioGroup>
 
-                </LinearLayout>
 
                 <TextView
                     android:id="@+id/textView10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Marque se o pedido foi finalizado"
+                    android:layout_marginTop="5dp"
+                    android:text="Marque se o pedido foi quitado"
                     android:textSize="12sp" />
 
                 <LinearLayout
+                    android:id="@+id/llcbPedidoQuitado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
                     android:orientation="horizontal">
 
                     <CheckBox
-                        android:id="@+id/cbPedidoQuitado"
+                        android:id="@+id/cbPedidoQuitadoEdicaoPedido"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Pedido Finalizado"
+                        android:text="Pedido Quitado"
                         android:theme="@style/CheckBoxTheme" />
+
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnConcluidoEdicaoPedido"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_buttons_green"
+                    android:text="Concluído"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
             </LinearLayout>
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btnDelete"
-                android:layout_width="175dp"
-                android:layout_height="45dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="3dp"
-                android:background="@drawable/selector_buttons_red"
-                android:text="Deletar"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
-
-            <Button
-                android:id="@+id/btnConcluido"
-                android:layout_width="175dp"
-                android:layout_height="45dp"
-                android:layout_marginLeft="3dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/selector_buttons_green"
-                android:text="Concluído"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
-        </LinearLayout>
-
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

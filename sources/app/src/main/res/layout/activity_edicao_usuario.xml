@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.EdicaoUsuarioActivity">
+    tools:context=".activity.EdicaoUsuarioActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout8"
@@ -90,9 +90,10 @@
             </LinearLayout>
 
             <EditText
-                android:id="@+id/etNome"
+                android:id="@+id/etNomeEdicaoUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
                 android:ems="10"
                 android:hint="Digite seu nome completo"
                 android:inputType="textPersonName"
@@ -130,7 +131,7 @@
             </LinearLayout>
 
             <EditText
-                android:id="@+id/etNascimento"
+                android:id="@+id/etNascimentoEdicaoUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-5dp"
@@ -172,7 +173,7 @@
             </LinearLayout>
 
             <Spinner
-                android:id="@+id/spinnerSexo"
+                android:id="@+id/spinnerSexoEdicaoUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="35dp" />
 
@@ -206,7 +207,7 @@
             </LinearLayout>
 
             <EditText
-                android:id="@+id/etEmail"
+                android:id="@+id/etEmailEdicaoUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-5dp"
@@ -217,26 +218,70 @@
                 tools:layout_editor_absoluteX="29dp"
                 tools:layout_editor_absoluteY="109dp" />
 
+            <TextView
+                android:id="@+id/tvSenhaUsuario2"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:paddingLeft="5dp"
+                android:text="Senha"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/background_dark"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+            <EditText
+                android:id="@+id/etSenhaEdicaoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Digite sua senha"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="109dp" />
+
+            <TextView
+                android:id="@+id/tvRepeteSenhaUsuario2"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:paddingLeft="5dp"
+                android:text="Repita Senha"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/background_dark"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+            <EditText
+                android:id="@+id/etRepeteSenhaEdicaoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Repita sua senha"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="109dp" />
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="90dp"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnDelete"
+                android:id="@+id/btnApagarContaEdicaoUsuario"
                 android:layout_width="175dp"
                 android:layout_height="45dp"
-                android:layout_marginTop="150dp"
                 android:layout_marginRight="3dp"
                 android:background="@drawable/selector_buttons_red"
-                android:text="Deletar"
+                android:text="Apagar Conta"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="20sp"
+                android:onClick="onClickButtonApagarConta"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -244,15 +289,16 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
             <Button
-                android:id="@+id/btnConcluido"
+                android:id="@+id/btnConcluidoEdicaoUsuario"
                 android:layout_width="175dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="3dp"
-                android:layout_marginTop="150dp"
                 android:layout_weight="1"
                 android:background="@drawable/selector_buttons_green"
-                android:text="Concluido"
+                android:text="Concluído"
                 android:textAllCaps="false"
+                android:onClick="onClickButtonEditUsuario"
+                android:clickable="true"
                 android:textColor="@android:color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"

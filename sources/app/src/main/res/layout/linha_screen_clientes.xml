@@ -22,10 +22,10 @@
                 android:layout_width="258dp"
                 android:layout_height="25dp"
                 android:layout_weight="1"
-                android:gravity="center"
+                android:gravity="left"
                 android:text="Cliente"
-                android:textAlignment="textStart"
                 android:textColor="@android:color/background_dark"
+                android:textAlignment="textStart"
                 android:textSize="18sp" />
 
             <TextView
@@ -49,7 +49,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnDividaCliente"
+                android:id="@+id/btnValorDividaCliente"
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -99,10 +99,7 @@
                     android:background="@android:color/transparent"
                     app:srcCompat="@drawable/ic_delete_red_24dp" />
             </LinearLayout>
-
-
         </LinearLayout>
-
     </LinearLayout>
 
 </LinearLayout>

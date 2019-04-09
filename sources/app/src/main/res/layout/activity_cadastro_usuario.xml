@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.CadastroUsuarioActivity"
+    tools:context=".activity.CadastroUsuarioActivity"
     tools:layout_editor_absoluteY="81dp">
 
     <LinearLayout
@@ -305,6 +305,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/selector_buttons_green"
             android:onClick="onClickButtonCadastroUsuario"
+            android:clickable="true"
             android:text="Cadastrar"
             android:textAllCaps="false"
             android:textColor="@android:color/background_light"

@@ -1,22 +1,22 @@
 package br.edu.ifpb.seamplus.model;
 
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NonNull;
+import lombok.NoArgsConstructor;
 
+@Entity
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Atelie implements Serializable {
 
+    @PrimaryKey
     private long id;
-    @NonNull private String nomeFantasia;
-    private Estoque estoque;
-    private List<Cliente> clientes;
-
-    public Atelie() {
-        clientes = new ArrayList<>();
-    }
+    private String nomeFantasia;
 
 }
