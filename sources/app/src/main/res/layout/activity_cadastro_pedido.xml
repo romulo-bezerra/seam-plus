@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.CadastroPedidoActivity"
+    tools:context=".activity.CadastroPedidoActivity"
     tools:layout_editor_absoluteY="81dp">
 
     <LinearLayout
@@ -44,13 +44,38 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="25dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDescricao2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Selecione o cliente"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/background_dark"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+            <Spinner
+                android:id="@+id/spinnerClienteCadastroPedido"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="395dp"
+            android:layout_marginTop="5dp"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="395dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:orientation="vertical">
@@ -151,7 +176,7 @@
                     android:id="@+id/textView5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:text="Marque quando o pedido estiver finalizado"
                     android:textSize="12sp" />
 
@@ -161,12 +186,12 @@
                     android:orientation="horizontal">
 
                     <CheckBox
-                        android:id="@+id/cbPedidoFinalizado"
+                        android:id="@+id/cbPedidoFinalizadoCadastroPedido"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Pedido Finalizado"
-                        android:theme="@style/CheckBoxTheme"/>
+                        android:theme="@style/CheckBoxTheme" />
 
 
                 </LinearLayout>
@@ -175,17 +200,29 @@
                     android:id="@+id/textView8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:text="Selecione a prioridade do pedido"
                     android:textSize="12sp" />
 
-                <LinearLayout
+
+                <RadioGroup
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
+
+
                     <RadioButton
-                        android:id="@+id/rbUrgente"
+                        android:id="@+id/rbNormalCadastroPedido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Normal"
+                        android:theme="@style/CheckBoxTheme" />
+
+                    <RadioButton
+                        android:id="@+id/rbUrgenteCadastroPedido"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -193,22 +230,14 @@
                         android:textColor="@android:color/black"
                         android:theme="@style/CheckBoxTheme" />
 
-                    <RadioButton
-                        android:id="@+id/rbNormal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="60dp"
-                        android:layout_weight="1"
-                        android:text="Normal"
-                        android:theme="@style/CheckBoxTheme"/>
+                </RadioGroup>
 
-                </LinearLayout>
 
                 <TextView
                     android:id="@+id/textView10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:text="Marque se o pedido foi quitado"
                     android:textSize="12sp" />
 
@@ -218,7 +247,7 @@
                     android:orientation="horizontal">
 
                     <CheckBox
-                        android:id="@+id/cbPedidoQuitado"
+                        android:id="@+id/cbPedidoQuitadoCadastroPedido"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -231,9 +260,10 @@
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginTop="30dp"
-                    android:onClick="onClickButtonCadastrarPedido"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
                     android:background="@color/colorButtonNext"
+                    android:onClick="onClickButtonCadastrarPedido"
                     android:text="Cadastrar Pedido"
                     android:textAllCaps="false"
                     android:textSize="20sp"

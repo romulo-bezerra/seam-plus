@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.edu.ifpb.seamplus">
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,27 +12,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.CadastroAtelieActivity" />
-        <activity android:name=".activities.HomeActivity" />
-        <activity android:name=".activities.CadastroClienteActivity" />
-        <activity android:name=".activities.CadastroUsuarioActivity" />
-        <activity android:name=".activities.PedidosActivity" />
-        <activity android:name=".activities.ClientesActivity" />
-        <activity android:name=".activities.CadastroPedidoActivity" />
-        <activity android:name=".activities.EdicaoClienteActivity" />
-        <activity android:name=".activities.EdicaoPedidoActivity" />
-        <activity android:name=".activities.EdicaoUsuarioActivity" />
-        <activity android:name=".activities.DividaActivity"></activity>
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.CadastroClienteActivity" />
+        <activity android:name=".activity.CadastroUsuarioActivity" />
+        <activity android:name=".activity.PedidosActivity" />
+        <activity android:name=".activity.ClientesActivity" />
+        <activity android:name=".activity.CadastroPedidoActivity" />
+        <activity android:name=".activity.EdicaoClienteActivity" />
+        <activity android:name=".activity.EdicaoPedidoActivity" />
+        <activity android:name=".activity.EdicaoUsuarioActivity" />
+        <activity android:name=".activity.DividaActivity"></activity>
 
 
-        <service android:name=".services.DescontoPagamentoService" />
+        <service android:name=".androidservice.DescontoPagamentoService" />
 
     </application>
 

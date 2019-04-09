@@ -1,26 +1,55 @@
 package br.edu.ifpb.seamplus.model;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
+import android.arch.persistence.room.ColumnInfo;
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.ForeignKey;
+import android.arch.persistence.room.Ignore;
+import android.arch.persistence.room.PrimaryKey;
+import android.arch.persistence.room.TypeConverters;
 
+import java.io.Serializable;
+
+import br.edu.ifpb.seamplus.database.converters.SexoConverter;
 import br.edu.ifpb.seamplus.model.enums.Sexo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NonNull;
+import lombok.NoArgsConstructor;
 
+@Entity(foreignKeys =
+    @ForeignKey(
+        entity = Atelie.class,
+        parentColumns = "id",
+        childColumns = "atelieId"
+    )
+)
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Cliente implements Serializable {
 
+    @PrimaryKey(autoGenerate = true)
     private long id;
-    @NonNull private String nome;
+    private String nome;
     private String apelido;
-    @NonNull private Sexo sexo;
-    private Divida divida;
-    List<Pedido> pedidos;
+    @TypeConverters(SexoConverter.class)
+    private Sexo sexo;
+    @ColumnInfo(index = true)
+    private long atelieId;
 
-    public Cliente() {
-        pedidos = new ArrayList<>();
+    @Ignore
+    public Cliente(String nome, String apelido, Sexo sexo, long atelieId){
+        this.nome = nome;
+        this.apelido = apelido;
+        this.sexo = sexo;
+        this.atelieId = atelieId;
     }
+
+    //    private Divida divida;
+//    List<Pedido> pedidos;
+
+
+//    public Cliente() {
+//        pedidos = new ArrayList<>();
+//    }
 
 }

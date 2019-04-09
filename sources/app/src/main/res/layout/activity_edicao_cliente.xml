@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.EdicaoClienteActivity">
+    tools:context=".activity.EdicaoClienteActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout6"
@@ -81,7 +81,7 @@
             </LinearLayout>
 
             <EditText
-                android:id="@+id/etNome"
+                android:id="@+id/etNomeEdicaoCliente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-5dp"
@@ -122,7 +122,7 @@
             </LinearLayout>
 
             <EditText
-                android:id="@+id/etApelido"
+                android:id="@+id/etApelidoEdicaoCliente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-5dp"
@@ -164,7 +164,7 @@
             </LinearLayout>
 
             <Spinner
-                android:id="@+id/spinnerSexo"
+                android:id="@+id/spinnerSexoEdicaoCliente"
                 android:layout_width="match_parent"
                 android:layout_height="35dp" />
 
@@ -174,34 +174,19 @@
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="170dp"
+            android:layout_marginTop="200dp"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnDeleteCliente"
-                android:layout_width="175dp"
-                android:layout_height="45dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="3dp"
-                android:background="@drawable/selector_buttons_red"
-                android:text="Deletar"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
-
-            <Button
-                android:id="@+id/btnConcluido"
+                android:id="@+id/btnConcluidoEdicaoCliente"
                 android:layout_width="175dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="3dp"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/selector_buttons_green"
+                android:clickable="true"
+                android:onClick="onClickButtonConcluirEdicaoCliente"
                 android:text="Concluído"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"

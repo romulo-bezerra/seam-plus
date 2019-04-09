@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.CadastroPedidoActivity"
+    tools:context=".activity.CadastroPedidoActivity"
     tools:layout_editor_absoluteY="81dp">
 
     <LinearLayout
@@ -25,18 +25,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="-5dp"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/tvTituloPagina"
-                android:layout_width="434dp"
-                android:layout_height="37dp"
-                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="fill_vertical"
-                android:text="Dívida"
+                android:text="Dívida /"
                 android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvNomeClienteDividaTelaDivida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="130dp"
+                android:layout_weight="1"
+                android:text="Cliente"
+                android:textColor="@color/colorButtonNext"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -76,7 +87,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/tvValorDivida"
+                    android:id="@+id/tvValorDividaTelaDivida"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center_horizontal"
@@ -105,10 +116,11 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/etValorDescontoPagamento"
+                        android:id="@+id/etValorDescontoPagamentoTelaDivida"
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
@@ -121,42 +133,31 @@
                         tools:layout_editor_absoluteY="109dp" />
 
                     <ImageButton
-                        android:id="@+id/btnDescontarPagamento"
+                        android:id="@+id/btnDescontarPagamentoTelaDivida"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:onClick="onClickButtonDescontarPagamento"
                         android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:onClick="onClickButtonDescontarPagamento"
                         app:srcCompat="@drawable/ic_remove_circle_outline_red_24dp" />
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Marque quando o pedido estiver finalizado"
-                    android:textSize="12sp" />
-
-                <CheckBox
-                    android:id="@+id/checkBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Liquidar Dívida" />
 
                 <Button
-                    android:id="@+id/btnDeletarDivida"
+                    android:id="@+id/btnDeletarDividaTelaDivida"
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:layout_marginTop="180dp"
                     android:background="@drawable/selector_buttons_red"
-                    android:text="Deletar"
+                    android:clickable="true"
+                    android:text="Liquidar dívida"
                     android:textAllCaps="false"
                     android:textSize="20sp"
+                    android:onClick="onClickButtonDeletarDivida"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -164,4 +165,18 @@
         </LinearLayout>
 
     </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/tvLiquidarDivida"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:text="liquidar"-->
+                    <!--android:textSize="12sp" />-->
+
+                <!--<CheckBox-->
+                    <!--android:id="@+id/cbLiquidarDividaTelaDivida"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Liquidar Dívida" />-->
 </android.support.constraint.ConstraintLayout>

@@ -26,18 +26,20 @@
                 android:paddingLeft="5dp"
                 android:text="Nome Pedido"
                 android:textAlignment="textStart"
-                android:textColor="@android:color/background_dark" />
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnClienteHome"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
                 android:background="@android:color/transparent"
                 android:gravity="center"
                 android:paddingLeft="10dp"
                 android:text="Nome Cliente"
                 android:textAlignment="textStart"
-                android:textColor="@color/colorLink" />
+                android:textColor="@android:color/background_dark" />
 
             <LinearLayout
                 android:layout_width="5dp"
@@ -90,8 +92,8 @@
                 android:gravity="center"
                 android:paddingLeft="5dp"
                 android:text="Pioridade"
-                android:textAlignment="viewStart"
                 android:textColor="@android:color/holo_red_dark"
+                android:textAlignment="viewStart"
                 android:textStyle="bold" />
         </LinearLayout>
 

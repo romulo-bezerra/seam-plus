@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.HomeActivity"
+    tools:context=".activity.HomeActivity"
     tools:layout_editor_absoluteY="81dp">
 
     <LinearLayout
@@ -164,7 +164,9 @@
             android:layout_marginRight="20dp"
             android:clickable="true"
             tools:layout_editor_absoluteX="27dp"
-            tools:layout_editor_absoluteY="175dp" />
+            tools:layout_editor_absoluteY="175dp" >
+
+        </ListView>
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/btnAddCliente"
